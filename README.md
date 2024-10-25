@@ -14,7 +14,9 @@ This project is a **Wild Animal Detection System** built using **Flask**, **Open
 - [Project Structure](#project-structure)
 - [Routes](#routes)
 - [Contributing](#contributing)
+- [Images](#images)
 - [License](#license)
+
 
 ## Overview
 
@@ -167,6 +169,13 @@ wild-animal-detection/
 - `/upload`: Upload page for image detection.
 - `/realtime`: Starts the real-time detection using the camera feed.
 - `/camera_feed`: Handles the video stream and detection process.
+
+## Images
+![Screenshot (128)](https://github.com/user-attachments/assets/5ea9b0de-ecc5-4cf5-a61c-e9e9352ee0df)
+![Screenshot (129)](https://github.com/user-attachments/assets/01d542f1-b828-4734-985a-3ce9716b1061)
+![Screenshot (130)](https://github.com/user-attachments/assets/554f7eaf-a828-4658-8277-741f898b6943)
+![Screenshot (134)](https://github.com/user-attachments/assets/02d69586-7f2b-44ed-9ff9-1703c9be208f)
+![Screenshot (135)](https://github.com/user-attachments/assets/7c660fa6-bedc-48b6-b540-48142037ec87)
 
 ## Contributing
 
