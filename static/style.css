@@ -1,0 +1,179 @@
+/* Basic styling for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling - fixed position */
+.header {
+    background: linear-gradient(115deg, #8aa5ff, #7bfecc);
+    padding: 15px;
+    width: 100%;
+    height: 40px; /* Increased height to ensure content fits */
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center; /* Centers the heading */
+    align-items: center;
+    z-index: 10; /* Ensures it's above the content */
+}
+
+/* Styling the h1 to be centered */
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fdffff;
+    text-shadow: #000000 0 0 5px;
+    flex: 1; /* Takes up remaining space in flexbox */
+    text-align: center;
+}
+
+/* Greeting styling */
+.greeting {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 18%;
+    transform: translateY(-50%); /* Vertically centers the greeting */
+    z-index: 11;
+    white-space: nowrap; /* Ensures greeting stays on one line */
+    animation: colorChange 3s infinite; /* Applies the color change animation */
+}
+
+/* Animation for greeting color change */
+@keyframes colorChange {
+    0% { color: #57fb32; }
+    25% { color: #fdfdfc; }
+    50% { color: #00ff99; }
+    75% { color: #e3e9fb; }
+    100% { color: #fb680c; }
+}
+
+/* Background image content starts from top and flows under the header */
+.content {
+    background: url('/static/back3.jpg') no-repeat center top;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px; /* Adds space equal to the header's height */
+    height: 91vh; /* Ensures it covers the entire viewport height */
+}
+
+/* Logout button styling */
+.logout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff1a1a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout:hover {
+    background-color: #4a4949ae;
+    color: #ff1a1a;
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Remove underline from links in the cards */
+.menu a {
+    text-decoration: none;
+}
+
+/* Card styling */
+.card {
+    width: 280px;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Ensure the image is centered in the card */
+.card1 img {
+    width: 60px;
+    height: 60px;
+}
+.card2 img {
+    width: 90px;
+    height:90px;
+}
+.card1 span{
+    color: #fdffff;
+    text-shadow: #000000 0 0 3px;
+}
+.card2 span{
+    margin-top: -5px;
+    color: #fdffff;
+    text-shadow: #000000 0 0 3px;
+}
+.card1 span:hover{
+    color: #00cf3b;
+    text-shadow: none;
+}
+.card2 span:hover{
+    color: #03cb3c;
+    text-shadow: none;
+}
+
+/* Different gradient backgrounds for cards */
+.card1 {
+    margin-top: -40px;
+    background: linear-gradient(135deg, #faa691, #defd50);
+}
+
+.card2 {
+    margin-top: -40px;
+    background: linear-gradient(135deg, #77fbb9, #38e1fb);
+}
+
+.card3 {
+    margin-top: -40px;
+    background: linear-gradient(135deg, #96fbc4, #45a1fc);
+}
+
+.card4 {
+    margin-top: -40px;
+    background: linear-gradient(135deg, #f66447, #ffa2cc);
+}
+
+/* Hover effect for cards - makes all other cards transparent */
+.menu a:hover .card {
+    background: rgba(254, 253, 253, 0.995);
+}
+
+/* Hover effect for the card you're hovering on */
+.menu a:hover .card:hover {
+    transform: scale(1.05);
+    background: rgb(255, 255, 255); /* Less transparency */
+    box-shadow: 0 8px 16px rgba(159, 255, 159, 0.887);
+}

@@ -1,0 +1,5 @@
+Flask==2.2.2
+mysqlclient==2.1.0
+opencv-python-headless==4.5.5.64
+numpy==1.23.1
+roboflow==1.0.0
